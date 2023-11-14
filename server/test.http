@@ -1,0 +1,76 @@
+###get images
+GET http://localhost:3001/api/images HTTP/1.1
+
+###get all pages
+GET http://localhost:3001/api/pages HTTP/1.1
+
+###get one page
+GET http://localhost:3001/api/pages/1 HTTP/1.1
+
+###get posted pages
+GET http://localhost:3001/api/posted/pages HTTP/1.1
+
+###add page
+POST http://localhost:3001/api/pages HTTP/1.1
+content-type: application/json
+
+{
+    "id": 1,
+    "title": "Vulcani",
+    "authorId": 1,
+    "dateOfCreation": "2023-03-17",
+    "dateOfPublication": "2023-03-17",
+    "contents": [
+      {
+        "type": "header",
+        "value": "The Ring of Fire",
+        "order": 0
+      },
+      {
+        "type": "paragraph",
+        "value": "Here the paragrph...",
+        "order": 1
+      }
+    ]
+}
+
+###delete page
+DELETE http://localhost:3001/api/pages/7 HTTP/1.1
+
+###modify page
+POST http://localhost:3001/api/pages/20 HTTP/1.1
+content-type: application/json
+
+{
+    "id": 5,
+    "title": "EX pag 5",
+    "authorId": 1,
+    "dateOfCreation": "2023-03-17",
+    "dateOfPublication": "2023-03-17",
+    "contents": [
+      {
+        "type": "header",
+        "value": "The Ring of Fire",
+        "order": 0
+      },
+      {
+        "type": "paragraph",
+        "value": "Here the paragrph...",
+        "order": 1
+      }
+    ]
+}
+
+###get title site
+GET http://localhost:3001/api/title HTTP/1.1
+
+###modify title site
+PUT http://localhost:3001/api/title HTTP/1.1
+content-type: application/json
+
+{
+  "name" : "CMSmall 2"
+}
+
+###get all users
+GET http://localhost:3001/api/users HTTP/1.1
