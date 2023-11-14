@@ -2,7 +2,7 @@
 # Exam #1: "CMSmall"
 Design and implement a web application for a small Content Management System (CMS) where users can create, post, modify and delete pages.
 
-grade: 30 lode out of 30
+Grade: **30 lode** out of 30
 
 ## React Client Application Routes
 
